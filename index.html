@@ -1,23 +1,36 @@
 <!DOCTYPE html>
+<!-- This is the style cs -->
+<style>
+    body {
+  color: blue;
+  text-align: center;
+  word-spacing: 2px;
+}
+</style>
+<!-- This is javascript data -->
+<script>
+  var APIKey = "29486e37c00244ed1968ad8b3f094df4";
+
+// Get Input Data
+  var weather = document.getElementById("weatherReport");
+  function getWeather() {
+  document.getElementById("cityWeather").submit();
+  var api_request = 'api.openweathermap.org/data/2.5/weather?q=(cityWeather)&appid=(APIKey)'
+}
+</script>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+        <script src="script.js"></script>
     </head>
- <!-- Trigger/Open The Modal -->
- <button id="myBtn">See weather</button>
+<div class="header">
+  <h1> Weather Forcast </h1>
+</div>
 
- <!-- The Modal -->
- <div id="myModal" class="modal">
- 
-   <!-- Modal content -->
-   <div class="modal-content">
-     <span class="close">&times;</span>
-     <p>Please enter the city for the weather you would like to see? </p>
-     <input type="text" id="cityWeather" name="city">
-     <input type="submit" value="Submit">
+  <div class="weather" id="weatherReport">
+  <p>Please enter the city for the weather you would like to see? </p>
+  <input type="text" id="cityWeather" name="city">
+  <input type="submit" value="Get Weather">
    </div>
- 
- </div> 
 </html>
