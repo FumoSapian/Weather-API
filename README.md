@@ -7,5 +7,6 @@ USAGE:
 in order to pull up the weather of the city you would like to search for it is done in two steps.
 
 1: click on the button that will say get results in the middle of the page
+
 2: the results of your city weather will be printed within the main page of the website
 ![Example](https://github.com/user-attachments/assets/6ac8952e-0dbf-4905-98b9-d2d1a5ac06c5)
